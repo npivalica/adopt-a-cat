@@ -1,0 +1,427 @@
+/* -----GLAVNE INFORMACIJE----------*/
+* {
+  margin:0;
+  padding:0;
+}
+.cleaner {
+  clear: both;
+}
+#wrapper {
+  background-color: #e3e3e3;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+header#top, footer#bottom {
+  width:100%;
+  background-color: #303030;
+}
+#container1, #main1, #container2 {
+  width:1000px;
+  margin: 0 auto;
+}
+input[type], button, textarea {
+  outline: 0;
+  outline-offset: 0;
+  border:none;
+  border-radius: 8px;
+}
+input[type="submit"], input[type="reset"], button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  outline: 0;
+}
+#main1 i {
+  color:#41ad91;
+}
+img {
+  border-radius: 12px;
+}
+a:visited {
+  color:#a35c21;
+}
+a:link {
+  color:#d6d6d6;
+}
+a:active {
+  color:#d3762d;
+}
+
+
+/* ---------HEADER---------- */
+header#top {
+  position:fixed;
+  z-index: 2;
+  box-shadow: 2px 2px 2px;
+}
+#container1 #logo {
+  width:20%;
+  float: left;
+}
+#container1 #logo img{
+  width: 100%;
+}
+#container1 nav {
+  float: left;
+  margin-left: 98px;
+  padding-top: 96px;
+}
+#container1 nav ul {
+  list-style-type: none;
+}
+#container1 nav ul li {
+  display: inline-block;
+  padding-right: 14px;
+}
+#container1 nav ul li a {
+  color:#e3e3e3;
+  padding:10px;
+  text-transform: capitalize;
+  font-size: 28px;
+}
+#container1 nav ul li a.active {
+  background-color: #d3762d;
+  border-radius: 12px;
+}
+#container1 nav ul li a:hover:not(.active){
+  background-color: #41ad91;
+  border-radius: 12px;
+}
+#container1 #pretraga {
+  float: right;
+  margin-top:22px;
+}
+#container1 #pretraga form input,
+#container1 #pretraga form button {
+  padding:6px;
+  background-color: #e3e3e3;
+}
+#container1 #pretraga form button {
+  color:#303030;
+}
+#container1 #pretraga form button:hover {
+  background-color: #d6d6d6;
+}
+
+
+/* ---------MAIN----------------*/
+#main1 {
+  padding-top: 240px;
+  padding-bottom: 40px;
+}
+main {
+  width: 60%;
+  float: left;
+}
+aside {
+  width: 40%;
+  float:right;
+}
+#main1 #mainleft {
+  width:90%;
+}
+#main1 #mainleft .mainart {
+  width:100%;
+}
+#main1 #mainleft .mainart h1 {
+  font-size: 28px;
+  padding-bottom: 8px;
+}
+#main1 #mainleft .mainart p {
+  text-align: justify;
+  text-indent: 25px;
+  padding-bottom: 8px;
+  font-size: 18px;
+}
+#main1 #mainleft .mainart footer a{
+  color:#d3762d;
+  font-size: 18px;
+}
+#main1 #mainleft .mainart footer a:hover{
+  color:#41ad91;
+}
+#main1 #mainleft .mainart.rase {
+  padding-top: 20px;
+}
+#main1 #mainleft .mainart.rase h2 {
+  font-size: 24px;
+  padding-bottom: 8px;
+}
+#main1 #mainleft .mainart.rase #rase {
+  width: 100%;
+}
+#main1 #mainleft .mainart.rase #rase img {
+  width:100%;
+}
+#main1 #mainleft .mainart.rase footer {
+  padding-top: 8px;
+}
+#contact .kontakt h2 {
+  font-size: 24px;
+  text-align: center;
+}
+#contact .kontakt form input[type],
+#contact .kontakt form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+  background-color: #f9f9f9;
+}
+#contact .kontakt form textarea {
+  max-width: 100%;
+}
+#contact .kontakt form textarea::placeholder {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 18px;
+}
+#contact .kontakt form input[type]:focus,
+#contact .kontakt form textarea:focus {
+  border:1px solid #d3762d;
+}
+#contact .kontakt form input[type="submit"],
+#contact .kontakt form input[type="reset"]{
+  background-color: #d3762d;
+  width:45%;
+  display: inline;
+  margin-left: 18px;
+  font-size: 16px;
+  color:#e3e3e3;
+}
+#contact .kontakt form input[type="submit"]:focus,
+#contact .kontakt form input[type="reset"]:focus,
+#contact .kontakt form input[type="submit"]:hover,
+#contact .kontakt form input[type="reset"]:hover {
+  background-color: #a35c21;
+}
+#contact .kontakt.dole {
+  margin-top: 90px;
+}
+
+
+
+
+
+/* ----------------GALERIJA----------------*/
+#main1 #galerija {
+display:flex;
+flex-wrap:wrap;
+justify-content:space-around;
+}
+#main1 #galerija .slika {
+  width:30%;
+}
+#main1 #galerija .slika figure {
+  width: 100%;
+  background-color: #d7d7d7;
+  border-radius: 12px;
+  margin-bottom: 26px;
+  position:relative;
+}
+#main1 #galerija .slika figure figcaption {
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+  padding:8px;
+}
+#main1 #galerija .slika figure img {
+  width:100%;
+  opacity:1;
+  transition:0.5s ease;
+}
+#main1 #galerija .slika figure .tekst {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  opacity:0;
+  transition: 0.5s ease;
+}
+#main1 #galerija .slika figure:hover .image{
+  opacity:0.5;
+}
+#main1 #galerija .slika figure:hover .tekst {
+  opacity:1;
+}
+#main1 #galerija .slika figure .tekst p {
+  background-color:rgba(48,48, 48, 0.8);
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 12px;
+  color: #e3e3e3;
+  text-align: center;
+}
+#main1 #galerija .slika figure .tekst p a {
+  color:#d3762d;
+}
+#main1 #galerija .slika figure .tekst p a:hover{
+  color:#41ad91;
+}
+
+
+
+/* ----------FORMA-------------- */
+
+#main1 form.adoption {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#main1 form.adoption input {
+  width:50%;
+  margin-bottom: 20px;
+  padding:20px;
+  background-color: #f9f9f9;
+}
+#main1 form.adoption input[type]:focus {
+  border:1px solid #d3762d;
+}
+#main1 form.adoption input[type="submit"]{
+  width:30%;
+  background-color: #d3762d;
+  color:#e3e3e3;
+  font-weight: bold;
+  font-size: 18px;
+}
+#main1 form.adoption input[type="submit"]:hover,#main1 form.adoption input[type="submit"]:focus {
+  background-color:#a35c21;
+}
+
+/*  --------------O NAMA----------------  */
+#main1.mainabout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#main1 #about {
+  width:700px;
+  padding:40px 20px;
+}
+#main1 #about article h3 {
+  font-size:24px;
+  padding: 10px 0px;
+}
+#main1 #about article p {
+  text-align: justify;
+  text-indent: 25px;
+  font-size: 18px;
+}
+#main1 #google-map {
+  height:400px;
+  width:700px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+#about, #google-map {
+  margin-left: 20px;
+}
+/* ------------AUTOR---------------- */
+
+#nikolina {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#nikolina #mojaslika {
+  width:50%;
+  margin-bottom: 30px;
+}
+#nikolina #mojaslika img {
+  width:100%;
+}
+#nikolina #mojaslika span {
+  text-align: center;
+  font-size: 18px;
+}
+#nikolina #omeni {
+  width:50%;
+  margin-bottom: 30px;
+}
+#nikolina #omeni p {
+  text-align: center;
+  font-size: 18px;
+}
+
+
+/*  -------------PERKS--------------  */
+
+#perks {
+  padding:40px 0px;
+}
+#perks #uvod {
+  width:100%;
+  height:auto;
+}
+#uvod header {
+  background-image: url("../images/perks.jpg");
+  border-radius: 12px;
+  min-height:700px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+#uvod header h3 {
+  font-size: 26px;
+  background-color: rgba(227,227,227,0.5);
+  padding:42px 0px;
+  text-align: center;
+  font-weight: bold;
+}
+#uvod p {
+  text-align: justify;
+  font-size: 18px;
+}
+#perks .vest {
+  padding: 10px 0px;
+}
+#perks .vest header {
+  padding:6px 0px;
+  font-size: 20px;
+}
+#perks .vest p {
+  text-align: justify;
+}
+
+/* ------------FOOTER------------- */
+
+#container2 {
+  padding:30px 0px;
+}
+#container2 a {
+  font-size: 20px;
+  color:#e3e3e3;
+}
+#container2 #author, #xml {
+  float:left;
+}
+#author a:hover{
+  color:#a35c21;
+}
+#container2 #soc {
+  float: right;
+}
+#container2 #soc a i {
+  padding:4px;
+  border-radius: 4px;
+}
+#container2 #xml {
+  margin-left: 300px;
+}
+#container2 #xml a {
+  padding-left: 14px;
+}
+#container2 #xml a:hover {
+  color:#a35c21;}
+
+#container2 #xml a i:hover {
+  color:#a35c21;
+}
+#container2 #soc a i:hover {
+  background-color: #a35c21;
+}
