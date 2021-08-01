@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="css/xmlstyle.css"?>
+<rss version="2.0">
+<channel>
+  <item>
+    <tittle>Galerija</tittle>
+    <link>gallery.html</link>
+    <description>Pogledajte sve mace koje se mogu udomiti.</description>
+  </item>
+  <item>
+    <tittle>Zdravstvene prednosti vlasništva mačke</tittle>
+    <link>perks.html</link>
+    <description>Pročitajte o prednostima po Vaše zdravlje koje mačke pružaju.</description>
+  </item>
+  <item>
+    <tittle>O Nama</tittle>
+    <link>about.html</link>
+    <description>Pogledajte gde se nalazimo i dođite da se Vi i Vaša deca družite sa macama!</description>
+  </item>
+</channel>
+</rss>
